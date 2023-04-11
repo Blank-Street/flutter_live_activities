@@ -332,6 +332,8 @@ public class SwiftLiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHa
     
     public struct ContentState: Codable, Hashable {
       var appGroupId: String
+      var status: String = "Order Placed"
+      var stage: Int = 1
     }
     
     var id = UUID()
